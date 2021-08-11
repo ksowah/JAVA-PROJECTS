@@ -1,8 +1,9 @@
+//This programe tells if 
+//a number is even or odd
 
 import java.util.Scanner;
 
  class Main {
-
 
 
     public static void main(String[] args) {
