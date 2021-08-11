@@ -1,7 +1,7 @@
-package com.Practice;
+
 import java.util.Scanner;
 
- class TakeInput {
+ class Main {
 
 
 
