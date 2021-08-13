@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Main{
-
+    //the function below adds all the values in the array
     static double add(int numOfCourses, double[] gradePoint){
         {
             double sum = 0;
