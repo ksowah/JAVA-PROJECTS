@@ -60,7 +60,7 @@ class Main{
         System.out.println("\nYour performance chart is shown below: \n");
 
 
-                //performance chart
+                //performance chart.
 
         while(Math.round(gradePoint[j]) != 0){    //gradepoint is rounded
             gradePoint[j] -= 1;
