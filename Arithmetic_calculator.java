@@ -11,7 +11,7 @@ import java.util.Scanner;
         char operator;
         double answer;
 
-        System.out.println("Enter first num: ");
+        System.out.println("Enter first number: ");
         Scanner num1 = new Scanner(System.in);
         firstNum = num1.nextDouble();
 
