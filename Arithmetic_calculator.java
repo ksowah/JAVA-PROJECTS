@@ -10,7 +10,7 @@ import java.util.Scanner;
         double secondNum;
         char operator;
         double answer;
-
+        //Taking user input
         System.out.println("Enter first number: ");
         Scanner num1 = new Scanner(System.in);
         firstNum = num1.nextDouble();
