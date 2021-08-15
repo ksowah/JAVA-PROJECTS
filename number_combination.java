@@ -1,7 +1,8 @@
 
 import java.util.Scanner;
 public class Main {
-
+        
+ //gets the product of all the values in the array of the numerator
         static long productOfNumerator(int copyOfn, int[] store) {
 
             {
@@ -13,7 +14,7 @@ public class Main {
             return product;
             }
         }
-
+//gets the product of all the values in the array of denominatorA
     static long productOfdenomenatorA(int copyOfdenomenatorA, int[] denA) {
 
         {
@@ -25,7 +26,7 @@ public class Main {
             return product;
         }
     }
-
+//gets the product of all the values in denominatorB
     static long productOfdenomenatorB(int copyOfr, int[] denB) {
 
         {
@@ -58,6 +59,7 @@ public class Main {
         int copyOfn = n;
         int[] store = new int[n];
 
+          //numerator values are stored in the store[]
         while(n != 0){
 
             store[i] = n;
@@ -75,6 +77,7 @@ public class Main {
 
         int[] denA = new int[denomenatorA];
 
+            //values are stored in denA[]
         while(denomenatorA != 0){
 
             denA[j] = denomenatorA;
@@ -89,7 +92,7 @@ public class Main {
         int copyOfr = r;
         int[] denB = new int[r];
         int k = 0;
-
+        //values are stored in denB[]
         while(r != 0){
 
             denB[k] = r;
