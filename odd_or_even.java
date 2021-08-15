@@ -12,6 +12,7 @@ import java.util.Scanner;
         Scanner numInput = new Scanner(System.in);
         num = numInput.nextInt();
 
+     //conditional statement for test
         if(num % 2 == 0){
             System.out.println("\'" + num +"\'" + " is an even number");
         }else{
