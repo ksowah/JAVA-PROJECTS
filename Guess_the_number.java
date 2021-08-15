@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 
     public static void main(String[] args) {
-
+  
+     //generates random numbers as the secrete number
         final int secreteNum = (int)(Math.random() * 10);
         int num;
         int i = 0;
