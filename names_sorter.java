@@ -26,7 +26,8 @@ public class Main{
 
                 names.add(name.nextLine());
             }
-
+                
+                // this package sorts the list 
             Collections.sort(names);
 
             System.out.println();
