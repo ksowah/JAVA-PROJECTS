@@ -67,13 +67,13 @@ class Main{
             System.out.print("[#");
              if (Math.round(gradePoint[j]) == 0){
                 j++;
-                System.out.println(" ");
+                System.out.println();
             }else if(j == numOfCourses - 1){
                while(Math.round(gradePoint[j]) != 0){
                 gradePoint[j] -= 1;
                    System.out.print("[#");
                }
-                System.out.println("");
+                System.out.println();
                 break;
             }
         }
