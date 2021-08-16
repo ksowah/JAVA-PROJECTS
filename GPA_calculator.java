@@ -42,17 +42,17 @@ class Main{
         System.out.println("Your GPA is: " + gpa);
 
         if (gpa >= 3.6 && gpa <= 4.0){              //gpa classification
-            System.out.println("First Class");
+            System.out.println("First Class :)");
         }else if(gpa >= 3.0 && gpa <= 3.599){
-            System.out.println("Second Class (Upper Division)");
+            System.out.println("Second Class (Upper Division) :)");
         }else if(gpa >= 2.00 && gpa <= 2.999){
-            System.out.println("Second Class (Lower Division)");
+            System.out.println("Second Class (Lower Division) :)");
         }else if(gpa >= 1.50 && gpa <= 1.999){
-            System.out.println("Third Class");
+            System.out.println("Third Class :|");
         }else if(gpa >= 1.00 && gpa <= 1.499){
-            System.out.println("Pass");
+            System.out.println("Pass :(");
         }else if(gpa >= 0.00 && gpa <= 0.999){
-            System.out.println("Fail");
+            System.out.println("Fail :(");
         }else{
             System.out.println("You might have made a wrong input");
         }
