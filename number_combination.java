@@ -107,7 +107,7 @@ public class Main {
 
         long combination = top / finalDenominator;
 
-        System.out.println(combination);
+        System.out.println(copyOfn + " combination " + copyOfr + " is " + combination);
 
 
     }
