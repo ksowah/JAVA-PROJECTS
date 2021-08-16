@@ -16,12 +16,12 @@ public class Main{
             numOfList = number.nextInt();
 
             System.out.println("Please enter list of names");
-
+                // ArrayList stores the names 
             ArrayList<String> names = new ArrayList<>();
             Scanner name = new Scanner(System.in);
 
 
-
+              // loop the number of items times
             for (int i = 1; i <= numOfList; i++){
 
                 names.add(name.nextLine());
