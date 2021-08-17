@@ -5,13 +5,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 class Main {
-
+    // main class
     String name;
     String password;
 
     public class Account extends Main {
 
-
+        // method for creating account
      public void CreateAccount(){
 
         try{
