@@ -33,6 +33,7 @@ class Main {
 
     }
 
+        // Login method
         public void LogIn(){
 
             System.out.println("Enter username: ");
@@ -55,7 +56,9 @@ class Main {
             }
 
         }
-
+        
+        
+        // Delete method
         public void Delete(){
 
             System.out.println("Enter username: ");
