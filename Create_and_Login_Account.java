@@ -93,6 +93,7 @@ class Main {
         Scanner feedBack = new Scanner(System.in);
         response = feedBack.nextInt();
 
+        // evaluate response with conditional if statement
         if (response == 1){
 
             Main parent = new Main();
