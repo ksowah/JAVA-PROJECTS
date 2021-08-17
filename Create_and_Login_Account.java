@@ -1,16 +1,15 @@
-package com.Practice;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class UserInput {
+class Main {
 
     String name;
     String password;
 
-    public class Account extends UserInput {
+    public class Account extends Main {
 
 
      public void CreateAccount(){
@@ -22,7 +21,7 @@ class UserInput {
             name = input.nextLine();
             System.out.println("Enter password");
             password = input.nextLine();
-            FileWriter data = new FileWriter(/*TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\"*/ + name +  password + ".txt");
+            FileWriter data = new FileWriter("C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" + name +  password + ".txt");
             data.write("Dear " + name + " you have successfully logged in");
             data.close();
             System.out.println("Account successfully created");
@@ -43,7 +42,7 @@ class UserInput {
             password = user.nextLine();
 
             try{
-                File signIn = new File(/*TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\"*/ + name + password + ".txt");
+                File signIn = new File("C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" + name + password + ".txt");
                 Scanner logOn = new Scanner(signIn);
                 while(logOn.hasNextLine()){
                     String data = logOn.nextLine();
@@ -65,7 +64,7 @@ class UserInput {
             System.out.println("Enter password: ");
             password = user.nextLine();
 
-            File terminate = new File(/*TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\"*/ + name +  password + ".txt");
+            File terminate = new File("C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" + name +  password + ".txt");
             if(terminate.delete()){
                 System.out.println("Account successfully deleted");
             }else{
@@ -92,19 +91,19 @@ class UserInput {
 
         if (response == 1){
 
-            UserInput parent = new UserInput();
-            UserInput.Account child = parent.new Account();
+            Main parent = new Main();
+            Main.Account child = parent.new Account();
             child.CreateAccount();
         }else if (response == 0){
 
-            UserInput parent = new UserInput();
-            UserInput.Account child = parent.new Account();
+            Main parent = new Main();
+            Main.Account child = parent.new Account();
             child.LogIn();
 
         }else if(response == 2){
 
-            UserInput parent = new UserInput();
-            UserInput.Account child = parent.new Account();
+            Main parent = new Main();
+            Main.Account child = parent.new Account();
             child.Delete();
 
         } else{
