@@ -22,7 +22,7 @@ class UserInput {
             name = input.nextLine();
             System.out.println("Enter password");
             password = input.nextLine();
-            FileWriter data = new FileWriter("C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" + name +  password + ".txt");
+            FileWriter data = new FileWriter(/*TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\"*/ + name +  password + ".txt");
             data.write("Dear " + name + " you have successfully logged in");
             data.close();
             System.out.println("Account successfully created");
@@ -43,7 +43,7 @@ class UserInput {
             password = user.nextLine();
 
             try{
-                File signIn = new File("C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" + name + password + ".txt");
+                File signIn = new File(/*TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\"*/ + name + password + ".txt");
                 Scanner logOn = new Scanner(signIn);
                 while(logOn.hasNextLine()){
                     String data = logOn.nextLine();
