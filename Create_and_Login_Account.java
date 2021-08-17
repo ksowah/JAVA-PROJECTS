@@ -88,7 +88,8 @@ class Main {
         System.out.println("Enter '0' to login");
         System.out.println("Enter '2' to delete account");
         System.out.println("enter response: ");
-
+        
+        // take user response
         Scanner feedBack = new Scanner(System.in);
         response = feedBack.nextInt();
 
