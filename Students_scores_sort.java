@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Color {
+class Main {
 
 
 
