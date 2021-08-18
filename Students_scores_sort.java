@@ -1,5 +1,3 @@
-package com.Practice;
-
 import java.util.*;
 
 class Color {
