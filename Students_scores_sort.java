@@ -16,8 +16,11 @@ class Main {
                  String name;
                  int score;
 
+                  // names and scores are stored in the HashMap array
                  HashMap<String, Integer> info = new HashMap<>();
-
+               
+               
+                  // information is collected number of students times
                  while(numberOfStudents != 0) {
 
                      System.out.println("Enter name and score: ");
@@ -30,6 +33,7 @@ class Main {
 
                      if (numberOfStudents == 0) {
 
+                        // scores are stored in the ArrayList
                          ArrayList<Integer> mark = new ArrayList<>(info.values());
 
                          Collections.sort(mark);
