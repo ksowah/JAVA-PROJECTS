@@ -35,11 +35,14 @@ class Main {
 
                         // scores are stored in the ArrayList
                          ArrayList<Integer> mark = new ArrayList<>(info.values());
-
+                       
+                       
+                        // scores are sorted 
                          Collections.sort(mark);
 
                          System.out.println("The sorted list is below: \n");
-
+                            
+                       // sorted scores are now attached to their corresponding student name
                          for (Integer j : mark) {
                              for(Map.Entry<String, Integer> entry: info.entrySet()) {
 
