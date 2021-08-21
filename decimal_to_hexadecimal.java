@@ -10,12 +10,14 @@ public class Main {
             int[] hex = new int[100];
             int i = 0;
 
+                // take user input
             System.out.println("Please enter decimal number: ");
             Scanner input = new Scanner(System.in);
             decimal = input.nextInt();
 
             int copyOfDec = decimal;
 
+             /* loop through the decimal taking the remainders dividing by 16 */
             while (decimal != 0){
 
                 hex[i] = decimal % 16;
@@ -26,6 +28,7 @@ public class Main {
 
             System.out.println(copyOfDec + " in hexadecimal is: ");
 
+                // result is printed in reverse
             for (int j = i - 1; j >= 0; j--){
                 
 
