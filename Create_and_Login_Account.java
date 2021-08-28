@@ -43,7 +43,7 @@ class Main {
             password = user.nextLine();
 
             try{
-                File signIn = new File(/* TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" */ + name + password + ".txt");
+                File signIn = new File(/*You can decide to specify file path here +*/ name + password + ".txt");
                 Scanner logOn = new Scanner(signIn);
                 while(logOn.hasNextLine()){
                     String data = logOn.nextLine();
@@ -67,7 +67,7 @@ class Main {
             System.out.println("Enter password: ");
             password = user.nextLine();
 
-            File terminate = new File(/* TYPE FILE PATH HERE. eg: "C:\\Users\\user\\Java_Practice\\src\\com\\Practice\\" */ + name +  password + ".txt");
+            File terminate = new File(/*You can decide to specify file path here +*/ name +  password + ".txt");
             if(terminate.delete()){
                 System.out.println("Account successfully deleted");
             }else{
