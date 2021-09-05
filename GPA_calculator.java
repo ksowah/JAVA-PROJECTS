@@ -17,19 +17,31 @@ class Main{
 
         int creditHours;
         int numOfCourses;
+        int[] credits; 
+        int response;
+        
+        
 
         Scanner cHours = new Scanner(System.in);
         Scanner gPoint = new Scanner(System.in);
         Scanner numCourses = new Scanner(System.in);
+        Scanner creditH = new Scanner(System.in);
+        Scanner respond = new Scanner(System.in);
 
-        System.out.println("Please enter number of courses: ");
+        System.out.println("Enter 0: ");
+        response = respond.nextInt();
+
+        if (response == 0){
+            
+         System.out.println("Please enter number of courses: ");
         numOfCourses = numCourses.nextInt();
         System.out.println("Please enter credit hours: ");
         creditHours = cHours.nextInt();
         int j = 0;
-            //stores gradepoints in array 
+            
+           //stores gradepoints in array 
         double[] gradePoint = new double[numOfCourses];
-
+            
         for (int i = 0; i <= (numOfCourses - 1); i++){
             System.out.println("Enter gradepoint: ");
             gradePoint[i] = gPoint.nextDouble();
@@ -40,6 +52,19 @@ class Main{
         double gpa =  sum / (creditHours * numOfCourses);
 
         System.out.println("Your GPA is: " + gpa);
+            
+        }else if (response == 1){
+            
+         int[] credits = new int[numOfCourses];
+            
+            for (int j = 0; j <= (numOfCourses - 1); j++){
+            System.out.println("Enter gradepoint: ");
+            gradePoint[i] = gPoint.nextDouble();
+            System.out.println("Enter it's credit hours: ");
+            credits[j] = creditH.nextInt();
+        }
+            
+        }
 
         if (gpa >= 3.6 && gpa <= 4.0){              //gpa classification
             System.out.println("First Class :)");
