@@ -1,7 +1,8 @@
+
 import java.util.Scanner;
 
 class Main{
-    //the function below adds all the values in the array
+
     static double add(int numOfCourses, double[] gradePoint){
         {
             double sum = 0;
@@ -17,31 +18,19 @@ class Main{
 
         int creditHours;
         int numOfCourses;
-        int[] credits; 
-        int response;
-        
-        
 
         Scanner cHours = new Scanner(System.in);
         Scanner gPoint = new Scanner(System.in);
         Scanner numCourses = new Scanner(System.in);
-        Scanner creditH = new Scanner(System.in);
-        Scanner respond = new Scanner(System.in);
 
-        System.out.println("Enter 0: ");
-        response = respond.nextInt();
-
-        if (response == 0){
-            
-         System.out.println("Please enter number of courses: ");
+        System.out.println("Please enter number of courses: ");
         numOfCourses = numCourses.nextInt();
         System.out.println("Please enter credit hours: ");
         creditHours = cHours.nextInt();
         int j = 0;
-            
-           //stores gradepoints in array 
+            //stores gradepoints in array 
         double[] gradePoint = new double[numOfCourses];
-            
+
         for (int i = 0; i <= (numOfCourses - 1); i++){
             System.out.println("Enter gradepoint: ");
             gradePoint[i] = gPoint.nextDouble();
@@ -52,32 +41,19 @@ class Main{
         double gpa =  sum / (creditHours * numOfCourses);
 
         System.out.println("Your GPA is: " + gpa);
-            
-        }else if (response == 1){
-            
-         int[] credits = new int[numOfCourses];
-            
-            for (int j = 0; j <= (numOfCourses - 1); j++){
-            System.out.println("Enter gradepoint: ");
-            gradePoint[i] = gPoint.nextDouble();
-            System.out.println("Enter it's credit hours: ");
-            credits[j] = creditH.nextInt();
-        }
-            
-        }
 
         if (gpa >= 3.6 && gpa <= 4.0){              //gpa classification
-            System.out.println("First Class :)");
+            System.out.println("First Class");
         }else if(gpa >= 3.0 && gpa <= 3.599){
-            System.out.println("Second Class (Upper Division) :)");
+            System.out.println("Second Class (Upper Division)");
         }else if(gpa >= 2.00 && gpa <= 2.999){
-            System.out.println("Second Class (Lower Division) :)");
+            System.out.println("Second Class (Lower Division)");
         }else if(gpa >= 1.50 && gpa <= 1.999){
-            System.out.println("Third Class :|");
+            System.out.println("Third Class");
         }else if(gpa >= 1.00 && gpa <= 1.499){
-            System.out.println("Pass :(");
+            System.out.println("Pass");
         }else if(gpa >= 0.00 && gpa <= 0.999){
-            System.out.println("Fail :(");
+            System.out.println("Fail");
         }else{
             System.out.println("You might have made a wrong input");
         }
@@ -85,24 +61,29 @@ class Main{
         System.out.println("\nYour performance chart is shown below: \n");
 
 
-                //performance chart.
+                //performance chart
 
         while(Math.round(gradePoint[j]) != 0){    //gradepoint is rounded
+            System.out.print("[");
             gradePoint[j] -= 1;
-            System.out.print("[#");
+            System.out.print("#");
              if (Math.round(gradePoint[j]) == 0){
                 j++;
-                System.out.println();
+                System.out.println(" ");
             }else if(j == numOfCourses - 1){
                while(Math.round(gradePoint[j]) != 0){
+                   System.out.print("[");
                 gradePoint[j] -= 1;
-                   System.out.print("[#");
+                   System.out.print("#");
                }
-                System.out.println();
+                System.out.println("");
                 break;
             }
         }
 
     }
 }
+
+
+
 
