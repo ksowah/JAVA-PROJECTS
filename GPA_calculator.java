@@ -64,17 +64,15 @@ class Main{
                 //performance chart
 
         while(Math.round(gradePoint[j]) != 0){    //gradepoint is rounded
-            System.out.print("[");
             gradePoint[j] -= 1;
-            System.out.print("#");
+            System.out.print("[#");
              if (Math.round(gradePoint[j]) == 0){
                 j++;
                 System.out.println(" ");
             }else if(j == numOfCourses - 1){
                while(Math.round(gradePoint[j]) != 0){
-                   System.out.print("[");
                 gradePoint[j] -= 1;
-                   System.out.print("#");
+                   System.out.print("[#");
                }
                 System.out.println("");
                 break;
